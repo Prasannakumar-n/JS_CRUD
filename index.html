@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js"></script>
+    <title>Grocery</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Product Code</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Product Name</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty">Quantity</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div>
+                        <button class="submit-btn" type="submit">Submit</button>
+                        <button class="reset-btn" type="reset">Reset</button>
+                    </div>
+                </form>
+                <td>
+                    <table border="1" bordercolor = "green" class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
